@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>双向链表</title>
+</head>
+<body>
+    
+</body>
+<script src="./双向链表.js"></script>
+<script>
+let nodelist = new DoublyLinkerList()
+nodelist.append("abc")
+nodelist.append("cba")
+nodelist.append("bac")
+// console.log(nodelist.toString())
+nodelist.insert(2,"hello")
+console.log(nodelist.toString())
+console.log(nodelist.get(3))
+nodelist.update(3,"cc")
+console.log(nodelist.toString())
+
+</script>
+</html>

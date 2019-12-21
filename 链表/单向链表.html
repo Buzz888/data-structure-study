@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>_单向链表</title>
+</head>
+<body>
+    <script src="./单向链表.js"></script>
+    <script>
+    //测试
+    const list = new LinkedList()
+    //append
+    list.append("abc")
+    list.append("cba")
+    list.append("bac")
+    // console.log(list.toString())
+    list.insert(1,"mba")
+    // console.log(list.get(2))
+    console.log(list.indexOf("cba"))
+    list.update(0,"hello world")
+    list.removeAt(0)
+    list.remove("cba")
+    console.log(list.toString())
+    </script>
+</body>
+</html>
